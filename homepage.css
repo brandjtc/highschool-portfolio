@@ -1,0 +1,33 @@
+@charset "utf-8";
+html{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#520001;
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 3px #000000,1px 1px 1px #000000,-1px -1px 3px #000000,-1px -1px 1px #000000;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* mobile */
+@media only screen and (max-width: 700px){
+html{
+    background-image: url("assets/spaceart2.jpg");   
+}
+}
+/* PC */
+@media only screen and (min-width: 701px){
+    html{
+background-image:url("assets/space2.jpg");
+    }   
+}

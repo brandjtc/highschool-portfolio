@@ -1,0 +1,66 @@
+@charset "utf-8";
+ 
+p{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000,2px 2px 2px #000000,-2px -2px 2px #000000;
+    /*background: rgba(0,50,189,0.4);*/
+    margin-left: 23%;
+    margin-right: 23%;
+   }
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:#0F4B1F; 
+}
+
+/*media query stuff only */
+
+/*PC monitor/tablet horizontal media query*/
+@media only screen and (min-width:701px){
+    html{
+        background-image: url("assets/space.jpg");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }    
+   
+    .introheader{
+    text-align: center;
+     color: #90ee90;
+    text-shadow: 1px 1px 3px #660000,  -1px -1px 3px #660000;
+    -webkit-text-fill-color: #90ee90;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+}
+/*Mobile/tablet vertical media query*/
+@media only screen and (max-width:700px){
+    html{
+        background-image: url("assets/spaceart.jpg");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    .introheader{
+    text-align: center;
+     color: #90ee90;
+    text-shadow: 1px 1px 3px #000066, -1px -1px 3px #000066;
+    -webkit-text-fill-color: #ee9090;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+}

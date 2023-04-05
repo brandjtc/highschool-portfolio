@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+
+
+.introheader{
+    text-align: center;
+     color:#029418;
+    text-shadow: 1px 1px 2px #000000,  -1px -1px 2px #000000, 1px -1px 2px #000000, -1px 1px 2px #000000;
+    -webkit-text-fill-color: #50C878;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.introheader{
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+padding: 2em;
+}
+
+.introheader{
+    text-align: center;
+}
+/*Temporary code I'm going to delete later*/
+img {
+    border: thick solid #000000; 
+}
+
+html{
+    background: #8A8A8A;
+}
+
+
+@media only screen and (max-width:700px){
+    .pctable{
+        display: none;
+    }
+    html{
+        background: #8A8A8A;
+        background-image: url("assets/spacephotoshop.jpg");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+}
+/* PC */
+@media only screen and (min-width:701px){
+    .mobiletable{
+        display:none;
+    }
+    html{
+        background: #8A8A8A;
+        background-image: url("assets/photoshop.jpg");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+}
+.thumbnail{
+    width: 300px;
+    height:250px;
+}
+
+
+footer{
+    color:#AF0000 !important;
+}

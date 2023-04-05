@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.introheader{
+    text-align: center;
+     color: #90ee90;
+    text-shadow: 1px 1px 2px #000000,  -1px -1px 2px #000000;
+    -webkit-text-fill-color: #fada5e;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+padding: 2em;
+}
+
+.introheader{
+    text-align: center;
+}
+/*Temporary code I'm going to delete later*/
+img {
+    border: thick solid #000000; 
+}
+
+html{
+    background: #8A8A8A;
+}
+/* mobile */
+@media only screen and (max-width:700px){
+    .nooutline{
+   
+    border: 0px solid #000000!important; 
+    margin-bottom: 15px;
+    width: 80%;
+    height: 100%;
+    
+}
+    .pctable{
+        display: none;
+    }
+    html{
+        background: #8A8A8A;
+        background-image: url("assets/htmlmobile.png");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+}
+/* PC */
+@media only screen and (min-width:701px){
+    .nooutline{
+   
+    border: 0px solid #000000!important; 
+    margin-bottom: 15px;
+    width: 65%;
+    height: 100%;
+    
+}
+    
+    .mobiletable{
+        display:none;
+    }
+    html{
+        background: #8A8A8A;
+        background-image: url("assets/htmldesktop.jpg");
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+}
+.html_thumbnail{
+    width: 300px;
+    height:250px;
+}
+
+
+footer{
+    color:#AF0000 !important;
+}

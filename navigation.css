@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*
+.logo{
+  position: absolute;
+    left:13%;
+    top:6%;
+}
+*/
+
+/*credit to https://css-tricks.com/transitions-only-after-page-load/ for this trick to stop transitions from occurring until after pageload.*/
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.topnav { 
+    overflow: hidden;
+    
+}
+
+.topnav a {
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+background-color:rgba(34, 12, 64, 0.6);
+color: #f2f2f2;
+text-align: center; 
+padding-left: 1%;
+padding-right: 1%;
+text-decoration: none;
+font-size: 17px;
+padding-top:0.5em;
+padding-bottom: 0.5em;
+border-style: solid;
+border-width: thick;
+transition:all 0.3s ease-out 0.1s;
+border-color:white;
+    
+ }
+
+.topnav a:hover {
+    background-color: #ddd;
+    font-weight: bold;
+    color: #F30004;
+    border-color:#930004;
+    font-size:20px;
+}
+
+a.active {
+  background-color: #005b8b;
+  color: white;
+    font-weight: bold;
+    font-size:20px; 
+    padding-top:0.27em;
+    padding-bottom: 0.45em;
+}
+
+.inline li{
+list-style-type: none;
+margin:8px;
+font-size:inherit;
+display: inline;
+	
+}
+
+ul li a{
+    text-decoration: none;
+	}
+
+footer{
+position:fixed;
+color:yellow;
+font-size: 20px;
+text-align: center;
+padding: 10px 0px;
+text-shadow: 2px 2px 2px black,-2px -2px 2px black;       
+bottom: 0%;
+}
+
+
+
+@media only screen and (max-width:700px){
+    .inline li{
+    margin:3px;
+ }
+
+    .spacing{
+    margin-bottom: 1em;
+    }
+}
+@media only screen and (min-width:701px){
+    .spacing{
+        display:none;
+    }
+}
+
